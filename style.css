@@ -638,4 +638,184 @@ body {
     scrollbar-width: none;     /* Firefox */
     overflow: hidden;
 }
+/* Add these to the existing style.css */
 
+/* Base responsive styles */
+@media screen and (max-width: 768px) {
+    /* General adjustments */
+    body {
+        font-size: 14px;
+    }
+    
+    /* Level selection screen */
+    .level-card.full-width {
+        width: 90% !important;
+        padding: 10px;
+    }
+    
+    .level-icon {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+    
+    /* Quiz screen */
+    .quiz-container {
+        padding: 15px;
+    }
+    
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .quiz-info {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .info-box {
+        padding: 8px 12px;
+    }
+    
+    .question-container {
+        padding: 20px;
+    }
+    
+    .question-text {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+    
+    .options-container {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .option {
+        padding: 12px;
+    }
+    
+    .navigation {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .timer {
+        width: 50px;
+        height: 50px;
+        font-size: 0.9rem;
+        top: 15px;
+        right: 15px;
+    }
+    
+    /* Win/Lose screens */
+    .win-container, .lose-container {
+        padding: 20px;
+    }
+    
+    .win-container h1, .lose-container h1 {
+        font-size: 2rem;
+    }
+    
+    .congrats-text, .encourage-text {
+        font-size: 1.2rem;
+    }
+    
+    .score {
+        font-size: 3rem;
+    }
+    
+    .buttons {
+        flex-direction: column;
+    }
+    
+    .button {
+        width: 100%;
+    }
+}
+
+/* Larger screens */
+@media screen and (min-width: 1200px) {
+    .quiz-container, .level-container {
+        max-width: 1000px;
+    }
+    
+    .question-text {
+        font-size: 1.5rem;
+    }
+    
+    .option {
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Very small devices */
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 12px;
+    }
+    
+    .level-card .level-title {
+        font-size: 1rem;
+    }
+    
+    .level-card .level-desc {
+        font-size: 0.8rem;
+    }
+    
+    .question-text {
+        font-size: 1rem;
+    }
+    
+    .win-container h1, .lose-container h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Orientation specific */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    .quiz-container {
+        padding: 10px;
+    }
+    
+    .question-container {
+        padding: 15px;
+    }
+    
+    .question-text {
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+    
+    .options-container {
+        grid-template-columns: 1fr 1fr !important;
+    }
+    
+    .option {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    
+    .win-container, .lose-container {
+        padding: 15px;
+    }
+    
+    .win-container h1, .lose-container h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .congrats-text, .encourage-text {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    
+    .score {
+        font-size: 2.5rem;
+    }
+}
