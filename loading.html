@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Gue Pancasila!</title>
     <!-- Standard favicon -->
     <link rel="icon" href="assets/logoGame.png" type="image/x-icon">
@@ -55,6 +55,12 @@
             background-color: rgb(29, 46, 84);
             z-index: 100;
         }
+        @media screen and (max-width: 768px) {
+        .coin-image {
+            width: 80px;
+            height: 88px;
+            margin-bottom: 20px;
+        }
         .coin-image {
             width: 100px;
             height: 110px;
@@ -62,11 +68,11 @@
             animation: spin 2s linear infinite;
         }
         .progress-container {
-            width: 300px;
+            width: 80%;
             height: 10px;
             background-color: rgba(247, 244, 233, 0.2);
             border-radius: 5px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             overflow: hidden;
         }
         .progress-bar {
@@ -77,12 +83,12 @@
             transition: width 0.1s linear;
         }
         .loading-text {
-            font-size: 20px;
+            font-size: 16px;
             color: #f7f4e9;
             margin-bottom: 5px;
         }
         .sub-loading {
-            font-size: 15px;
+            font-size: 12px;
             color: #f7f4e9;
         }
         .white-screen {
@@ -102,7 +108,7 @@
         }
         .welcome-title {
             font-family: 'Montserrat', sans-serif;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 300;
             margin-bottom: 10px;
             color: #1A365D;
@@ -128,15 +134,15 @@
         }
         .welcome-subtitle {
             font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             font-weight: 400;
             font-style: italic;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             color: #4A5568;
         }
         .welcome-description {
             font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
+            font-size: 1rem;
             line-height: 1.6;
             color: #4A5568;
             max-width: 700px;
@@ -159,17 +165,17 @@
             font-style: italic;
         }
         .input-group {
-            width: 350px;
+            width: 90%;
             margin-bottom: 30px;
         }
         input[type="text"] {
             width: 100%;
-            padding: 15px 20px;
+            padding: 12px 15px;
             border: 2px solid #f7f4e9;
             border-radius: 50px;
             background: transparent;
             color: #f7f4e9;
-            font-size: 1.1rem;
+            font-size: 1rem;
             text-align: center;
         }
         input[type="text"]::placeholder {
@@ -205,12 +211,12 @@
             background: #f7f4e9;
             border: 2px solid #f7f4e9;
             color: #1A365D;
-            padding: 12px 30px;
+            padding: 12px 20px;
             border-radius: 50px;
             cursor: pointer;
             transition: all 0.3s;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1rem;
             margin-top: 20px;
             text-transform: uppercase;
             letter-spacing: 1px;
